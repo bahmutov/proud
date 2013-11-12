@@ -1,4 +1,11 @@
 
+0.0.2 / 2013-11-12
+==================
+
+  * added better package info, fixes #4
+  * added update notifier, fixes #5
+  * prefer global
+
 0.0.1 / 2013-11-11
 ==================
 
