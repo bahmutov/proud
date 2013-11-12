@@ -1,3 +1,5 @@
+#!/usr/bin/env node
+
 var check = require('check-types');
 var registry = require('npm-stats')();
 
@@ -9,7 +11,7 @@ if (!check.unemptyString(username)) {
 
 registry.user(username).list(function (err, data) {
   if (err) {
-    throw new err;
+    throw err;
   }
   check.verify.array(data, 'expected data to be an array');
   console.log('user', username, 'has', data.length, 'registered modules');

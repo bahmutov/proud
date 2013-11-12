@@ -1,0 +1,11 @@
+{
+  "all": {
+    "src": ["Gruntfile.js"],
+    "options": {
+      "errorsOnly": false,
+      "cyclomatic": 4,
+      "halstead": 12,
+      "maintainability": 80
+    }
+  }
+}
