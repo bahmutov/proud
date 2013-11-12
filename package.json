@@ -26,7 +26,8 @@
   },
   "dependencies": {
     "npm-stats": "~0.2.0",
-    "check-types": "~1.1.0"
+    "check-types": "~1.1.0",
+    "q": "~0.9.7"
   },
   "devDependencies": {
     "grunt-contrib-jshint": "~0.7.0",
