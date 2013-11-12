@@ -5,6 +5,7 @@ var q = require('q');
 var moment = require('moment');
 var registry = require('npm-stats')();
 var print = require('./src/print');
+var sprintf = require('sprintf-js').sprintf;
 
 var updateNotifier = require('update-notifier');
 var notifier = updateNotifier();
@@ -61,7 +62,7 @@ list().then(function (data) {
         return sum + dateCount.value;
       }, 0);
       // console.log('stats', name, 'downloads', count);
-      process.stdout.write('stats ' +  name + ' downloads ' + count + '               \r');
+      process.stdout.write(sprintf('stats %25s downloads %5d\r', name, count));
       counts[name] = count;
     });
   });
