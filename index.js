@@ -6,6 +6,12 @@ var moment = require('moment');
 var registry = require('npm-stats')();
 var print = require('./src/print');
 
+var updateNotifier = require('update-notifier');
+var notifier = updateNotifier();
+if (notifier.update) {
+  notifier.notify();
+}
+
 var username = process.argv[2];
 if (!check.unemptyString(username)) {
   console.log('need username');

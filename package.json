@@ -32,7 +32,8 @@
     "q": "~0.9.7",
     "moment": "~2.4.0",
     "lodash": "~2.3.0",
-    "easy-table": "~0.2.0"
+    "easy-table": "~0.2.0",
+    "update-notifier": "~0.1.7"
   },
   "devDependencies": {
     "grunt-contrib-jshint": "~0.7.0",
