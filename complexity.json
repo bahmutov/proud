@@ -1,6 +1,6 @@
 {
   "all": {
-    "src": ["Gruntfile.js"],
+    "src": ["Gruntfile.js", "src/*.js"],
     "options": {
       "errorsOnly": false,
       "cyclomatic": 4,

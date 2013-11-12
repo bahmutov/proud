@@ -4,8 +4,7 @@ var check = require('check-types');
 var q = require('q');
 var moment = require('moment');
 var registry = require('npm-stats')();
-var _ = require('lodash');
-var Table = require('easy-table');
+var print = require('./src/print');
 
 var username = process.argv[2];
 if (!check.unemptyString(username)) {
@@ -24,6 +23,9 @@ var counts = {};
 list().then(function (data) {
   check.verify.array(data, 'expected data to be an array');
   console.log('user', username, 'has', data.length, 'registered modules');
+  if (!data.length) {
+    return;
+  }
   // console.log(data);
 
   // data = data.slice(0, 5);
@@ -54,24 +56,7 @@ list().then(function (data) {
   });
 
   result.done(function () {
-    counts = _.pairs(counts);
-    counts = _.sortBy(counts, function (nameCount) {
-      return nameCount[1];
-    });
-    counts = counts.reverse();
-    var total = counts.reduce(function (sum, nameCount) {
-      return sum + nameCount[1];
-    }, 0);
-    counts.push(['Total', total]);
-
-    var t = new Table();
-    counts.forEach(function (nameCount) {
-      t.cell('Module', nameCount[0]);
-      t.cell('Downloads last month', nameCount[1]);
-      t.newRow();
-    });
-
-    console.log(t.toString());
+    print(counts);
   });
 
 }).catch(function (err) {
