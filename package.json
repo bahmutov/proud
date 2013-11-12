@@ -27,7 +27,10 @@
   "dependencies": {
     "npm-stats": "~0.2.0",
     "check-types": "~1.1.0",
-    "q": "~0.9.7"
+    "q": "~0.9.7",
+    "moment": "~2.4.0",
+    "lodash": "~2.3.0",
+    "easy-table": "~0.2.0"
   },
   "devDependencies": {
     "grunt-contrib-jshint": "~0.7.0",
