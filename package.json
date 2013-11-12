@@ -16,8 +16,10 @@
   "keywords": [
     "npm",
     "stats",
-    "downloads"
+    "downloads",
+    "npm-stats"
   ],
+  "preferGlobal": true,
   "pre-commit": "grunt",
   "author": "Gleb Bahmutov <gleb.bahmutov@gmail.com>",
   "license": "MIT",
