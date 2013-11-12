@@ -21,7 +21,7 @@
   ],
   "preferGlobal": true,
   "pre-commit": "grunt",
-  "author": "Gleb Bahmutov <gleb.bahmutov@gmail.com>",
+  "author": "Gleb Bahmutov @bahmutov <gleb.bahmutov@gmail.com>",
   "license": "MIT",
   "bugs": {
     "url": "https://github.com/bahmutov/proud/issues"
