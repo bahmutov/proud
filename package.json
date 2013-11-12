@@ -1,0 +1,27 @@
+{
+  "name": "proud",
+  "version": "0.0.0",
+  "description": "Collects NPM download stats for a developer",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/bahmutov/proud.git"
+  },
+  "keywords": [
+    "npm",
+    "stats",
+    "downloads"
+  ],
+  "author": "Gleb Bahmutov <gleb.bahmutov@gmail.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/bahmutov/proud/issues"
+  },
+  "dependencies": {
+    "npm-stats": "~0.2.0",
+    "check-types": "~1.1.0"
+  }
+}
