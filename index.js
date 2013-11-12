@@ -68,6 +68,7 @@ list().then(function (data) {
   });
 
   result.done(function () {
+    console.log(); // after process.stdout.write \r
     print(counts);
   });
 
