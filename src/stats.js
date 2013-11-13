@@ -2,7 +2,6 @@ var check = require('check-types');
 var q = require('q');
 var moment = require('moment');
 var registry = require('npm-stats')();
-var print = require('./print');
 var sprintf = require('sprintf-js').sprintf;
 
 var today = moment();
@@ -42,14 +41,14 @@ function stats(username, data) {
       var count = stats.reduce(function (sum, dateCount) {
         return sum + dateCount.value;
       }, 0);
-      process.stdout.write(sprintf('%3d %25s has %5d downloads\r', index + 1, name, count));
+      process.stdout.write(sprintf('%3d %30s has %5d downloads\r', index + 1, name, count));
       counts[name] = count;
     });
   });
 
-  result.done(function () {
+  return result.then(function () {
     printBlankLine(); // after process.stdout.write \r
-    print(counts);
+    return counts;
   });
 }
 
