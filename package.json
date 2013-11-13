@@ -1,6 +1,6 @@
 {
   "name": "proud",
-  "version": "0.0.3",
+  "version": "0.0.4",
   "description": "Collects NPM download stats for a developer",
   "main": "index.js",
   "bin": {

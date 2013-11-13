@@ -1,4 +1,10 @@
 
+0.0.4 / 2013-11-12
+==================
+
+  * added e2e tests, using as external module
+  * refactoring to allow use from external modules
+
 0.0.3 / 2013-11-12
 ==================
 
