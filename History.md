@@ -1,4 +1,11 @@
 
+0.0.3 / 2013-11-12
+==================
+
+  * printing number showing progress, fixes #6
+  * better formatting
+  * prefer global
+
 0.0.2 / 2013-11-12
 ==================
 
