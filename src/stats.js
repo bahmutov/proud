@@ -25,7 +25,7 @@ function stats(username, data) {
   });
 
   function printBlankLine() {
-    process.stdout.write(sprintf('%50s\n', ' '));
+    process.stdout.write(sprintf('%80s\n', ' '));
   }
 
   var result = q();
@@ -41,7 +41,7 @@ function stats(username, data) {
       var count = stats.reduce(function (sum, dateCount) {
         return sum + dateCount.value;
       }, 0);
-      process.stdout.write(sprintf('%3d %30s has %5d downloads\r', index + 1, name, count));
+      process.stdout.write(sprintf('%3d %30s has %10d downloads\r', index + 1, name, count));
       counts[name] = count;
     });
   });
