@@ -4,18 +4,16 @@ var moment = require('moment');
 var registry = require('npm-stats')();
 var sprintf = require('sprintf-js').sprintf;
 
-var today = moment();
-var monthAgo = today.subtract('months', 1);
-
-// name -> number of downloads
-var counts = {};
-
 function stats(username, data) {
   check.verify.array(data, 'expected data to be an array');
   console.log('user', username, 'has', data.length, 'registered modules');
   if (!data.length) {
     return;
   }
+
+  var today = moment();
+  var monthAgo = today.subtract('months', 1);
+
   // data = data.slice(0, 5);
   var downloadFns = data.map(function (name) {
     var moduleName = registry.module(name);
@@ -27,6 +25,9 @@ function stats(username, data) {
   function printBlankLine() {
     process.stdout.write(sprintf('%80s\n', ' '));
   }
+
+  // name -> number of downloads
+  var counts = {};
 
   var result = q();
   downloadFns.forEach(function (downloadFn, index) {
