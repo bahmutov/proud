@@ -1,4 +1,4 @@
-# proud v0.0.5
+# proud v0.0.6
 
 > Collects NPM download stats for a developer
 
@@ -13,6 +13,14 @@ proud 'username'
 ```
 
 
+
+### Related
+
+* [proud-badge](https://github.com/bahmutov/proud-badge) generates badges
+* [proud-connect](https://github.com/bahmutov/proud-connect) is a stand alone
+server generating badges with caching
+* [proud-heroku-app](https://github.com/bahmutov/proud-heroku-app) is
+a *proud-connect* service [running on Heroku](http://proud.herokuapp.com/)
 
 ## Why?
 
@@ -36,6 +44,11 @@ Support: if you find any problems with this module, email / tweet / open issue o
 
 ## History
 
+
+0.0.6 / 2013-11-17
+==================
+
+  * using grunt-readme to generate readme, fixes #10
 
 0.0.5 / 2013-11-14
 ==================
