@@ -2,6 +2,8 @@
 
 > {%= description %}
 
+{%= _.doc("./docs/badges.md") %}
+
 ## Use
 
 {%= _.doc("./docs/use.md") %}
