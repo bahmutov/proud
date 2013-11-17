@@ -9,7 +9,8 @@ module.exports = function (grunt) {
         'Gruntfile.js', 'index.js', 'src/*.js'
       ],
       options: {
-        jshintrc: '.jshintrc'
+        jshintrc: '.jshintrc',
+        reporter: require('jshint-stylish')
       },
     },
 
@@ -22,10 +23,6 @@ module.exports = function (grunt) {
       }
     },
   });
-
-  grunt.loadNpmTasks('grunt-contrib-jshint');
-  grunt.loadNpmTasks('grunt-complexity');
-  grunt.loadNpmTasks('grunt-readme');
 
   grunt.registerTask('default', ['jshint', 'complexity', 'readme']);
 };
