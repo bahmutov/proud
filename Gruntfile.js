@@ -19,7 +19,8 @@ module.exports = function (grunt) {
     readme: {
       options: {
         readme: './docs/README.tpl.md',
-        docs: '.'
+        docs: '.',
+        templates: './docs'
       }
     },
   });

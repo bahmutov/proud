@@ -1,10 +1,10 @@
-[![NPM][proud-icon]][proud-url]
+[![NPM][proud-icon] ][proud-url]
 
-[![Build status][proud-ci-image]][proud-ci-url]
-[![dependencies][proud-dependencies-image]][proud-dependencies-url]
-[![devdependencies][proud-devdependencies-image]][proud-devdependencies-url]
+[![Build status][proud-ci-image] ][proud-ci-url]
+[![dependencies][proud-dependencies-image] ][proud-dependencies-url]
+[![devdependencies][proud-devdependencies-image] ][proud-devdependencies-url]
 
-[![endorse][endorse-image]][endorse-url]
+[![endorse][endorse-image] ][endorse-url]
 
 [proud-icon]: https://nodei.co/npm/proud.png?downloads=true
 [proud-url]: https://npmjs.org/package/proud
