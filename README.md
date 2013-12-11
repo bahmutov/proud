@@ -1,4 +1,4 @@
-# proud v0.0.6
+# proud v0.0.7
 
 > Collects NPM download stats for a developer
 
